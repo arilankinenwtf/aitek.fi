@@ -1,0 +1,104 @@
+  .news-list {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    a {
+      padding-inline: 0 !important;
+    }
+    @media @desktop-max {
+      padding-bottom: 0;
+    }
+    &-item {
+      padding: 0;
+      padding-top: 4rem;
+      margin-inline: 0px;
+      padding-inline: 0;
+      width: 100% !important;
+      @media @desktop-max {
+        width: 100%;
+        padding: 0;
+        padding-inline: 0;
+        margin-inline: 0;
+      }
+
+      &-text-wrapper {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid @grey;
+        align-items: end;
+        @media @desktop-max {
+            flex-direction: column-reverse;
+            align-items: start;
+            border: none;
+        }
+      }
+  
+      &-content a {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        color: @black !important;
+        @media @desktop-max {
+          flex-direction: column;
+        }
+        &:hover {
+            color: @yellow !important;
+            .news-list-item-title {
+                color: @yellow !important;
+            }
+        }
+      }
+  
+      &-date {
+        padding-top: 1rem;
+        text-decoration: none !important;
+        padding-left: 2rem;
+        font-size: 24px;
+        font-weight: 700;
+        padding-left: 2rem;
+        padding-bottom: 30px;
+
+        @media @desktop-max {
+          text-align: left !important;
+          padding-inline: 0;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-size: 16px;
+        }
+      }
+      &-title {
+        text-decoration: none !important;
+        font-size: 24px;
+        font-weight: 700;
+        padding-bottom: 33px;
+        margin-bottom: 0;
+        color: @black;
+        @media @desktop-max {
+          text-align: left !important;
+          padding-inline: 0;
+          font-size: 18px;
+          margin-bottom: 2rem;
+        }
+      }
+      &-description {
+        display: none;
+
+        @media @desktop-max {
+          text-align: left !important;
+          padding-inline: 0;
+          padding-bottom: 3rem;
+        }
+      }
+      &-thumbnail {
+        height: 150px;
+        object-fit: cover;
+        object-position: center;
+        width: 300px;
+        padding-right: 2rem;
+        @media @desktop-max {
+          height: 200px;
+          width: auto;
+          padding: 0;
+        }
+      }
+    }
+  }

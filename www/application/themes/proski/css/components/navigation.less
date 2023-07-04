@@ -1,0 +1,45 @@
+// Jos sivulle lisää automaattisen navigaation lohkovalikosta, se käyttää näitä tyylejä
+
+ul.nav {
+  display: flex;
+  flex-flow: row wrap;
+  padding-inline-start: 0;
+  margin-right: 6rem;
+  z-index: 999;
+  li {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40px;
+    a {
+      color: @nav-color;
+      background-color: transparent;
+      font-size: 18px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0;
+    }
+    .transition();
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: none;
+      a {
+        color: @sky;
+      }
+
+      > ul {
+        display: block;
+      }
+    }
+
+    &.nav-path-selected {
+      a {
+        color: @sky;
+        text-decoration: underline;
+      }
+    }
+  }
+}

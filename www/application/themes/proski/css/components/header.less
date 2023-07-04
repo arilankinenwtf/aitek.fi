@@ -1,0 +1,30 @@
+.header {
+  background-color: @header-bg;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  overflow-x: hidden;
+  margin-bottom: -1px;
+  &-logo {
+    display: flex;
+    margin-left: 6rem;
+    img {
+      margin: @header-logo-margin;
+    }
+    @media @desktop-max {
+      margin-left: 0;
+      img {
+        width: 220px;
+      }
+    }
+  }
+
+  &-navigation {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    @media @desktop-max {
+      display: none;
+    }
+  }
+}

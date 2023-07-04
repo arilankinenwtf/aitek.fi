@@ -1,0 +1,42 @@
+.btn,
+button {
+  .transition(@button-transition);
+}
+
+.btn {
+  border: 0;
+  margin: @btn-cta-margin;
+  max-width: 100%;
+  white-space: normal;
+
+  &-primary {
+    background-color: @sky;
+    color: @grey;
+    padding: @btn-cta-padding;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid @sky;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: @grey;
+      color: @sky;
+    }
+  }
+
+  &-secondary {
+    background-color: @btn-cta-secondary-bg;
+    color: @btn-cta-secondary-color;
+    padding: @btn-cta-padding;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: @btn-cta-secondary-color-hover;
+    }
+  }
+}

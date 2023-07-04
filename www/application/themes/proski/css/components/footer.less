@@ -1,0 +1,27 @@
+.footer {
+  background-color: @footer-bg;
+  border-top: @footer-top-border;
+  color: @footer-color;
+  padding-inline: 35vw;
+  @media @desktop-max {
+    padding-inline: 1rem;
+  }
+  h2, h3, h4 {
+    color: @footer-heading-color;
+    padding-bottom: 2rem;
+  }
+  p {
+    color: @white;
+    line-height: 1rem;
+  }
+
+  a {
+    color: @footer-link-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: @footer-link-hover-color;
+    }
+  }
+}
