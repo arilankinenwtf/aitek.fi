@@ -1,5 +1,5 @@
 <?php
-namespace Application\Theme\Proski; // tässä pitää olla aina teeman kansion nimi viimeisenä
+namespace Application\Theme\Aitek; // tässä pitää olla aina teeman kansion nimi viimeisenä
 use Concrete\Core\Area\Layout\Preset\Provider\ThemeProviderInterface;
 
 class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProviderInterface {
