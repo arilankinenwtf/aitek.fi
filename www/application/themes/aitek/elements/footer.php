@@ -18,3 +18,4 @@ defined('C5_EXECUTE') or die("Access Denied.");
 </div>
 
 <?php $this->inc('elements/footer_bottom.php');?>
+
