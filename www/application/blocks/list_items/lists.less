@@ -37,7 +37,7 @@
 
   &-text {
     bottom: 0; // mobile
-    color: @black;
+    color: @white;
     font-size: 1.8rem;
     left: 0;
     padding: @gutter;
@@ -45,12 +45,12 @@
   }
 
   &-title {
-    color: @black;
+    color: @white;
   }
 
   &-description {
     p {
-      color: @black;
+      color: @white;
       padding: 0;
     }
   }
@@ -58,7 +58,7 @@
 
 // CONTACTS TEMPLATE
 
-@list-item-image-size: 160px;
+@list-item-image-size: 200px;
 
 .contact-list-ul {
   display: flex;
@@ -102,6 +102,7 @@
     height: @list-item-image-size;
     width: @list-item-image-size;
     position: relative;
+    border-radius: 50%;
     &:after {
       content: "";
       background-image: url("/application/files/8716/8535/4634/ikoni.svg");
@@ -119,6 +120,7 @@
       object-fit: cover;
       object-position: center;
       width: @list-item-image-size;
+      border-radius: 50%;
     }
   }
 }
