@@ -2,14 +2,13 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
 
-
-
-<main class="main-content" id="main-content">
-
-    <div class="intro">
+<div class="intro">
         <canvas id="spiders" class="hidden-xs"></canvas>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
+<main class="main-content" id="main-content">
+
 
     <?php
     $a = new Area('Main');
@@ -34,6 +33,7 @@ $this->inc('elements/header.php'); ?>
 
 <?php if (!Page::getCurrentPage()->isEditMode()): ?>
     <script>
+        if( $(window).width() > 960 ) {
         jQuery.noConflict();
         (function( $ ) {
         $(function() {
@@ -223,5 +223,6 @@ $this->inc('elements/header.php'); ?>
         } );
         });
         })(jQuery);
+    }
     </script>
 <?php endif; ?>
