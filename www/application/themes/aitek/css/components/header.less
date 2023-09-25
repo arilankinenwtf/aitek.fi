@@ -5,6 +5,9 @@
   flex-direction: row;
   overflow: hidden;
   height: 220px;
+  @media @desktop-max {
+    height: 120px;
+  }
   &-logo {
     display: flex;
     margin-left: 6rem;
@@ -15,7 +18,8 @@
     @media @desktop-max {
       margin-left: 0;
       img {
-        width: 160px;
+        width: 120px;
+        margin-top: 20px;
       }
     }
   }
