@@ -2,16 +2,13 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
 
-<div class="intro">
-    <div class="default-tausta">
-        
-    </div>
-        <canvas id="spiders" class="hidden-xs"></canvas>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-
 <main class="main-content" id="main-content">
 
+<div class="intro">
+    <div class="default-tausta"></div>
+    <canvas id="spiders" class="hidden-xs"></canvas>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 
     <?php
     $a = new Area('Main');
