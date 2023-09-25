@@ -3,6 +3,9 @@ defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
 
 <div class="intro">
+    <div class="etusivu-tausta">
+        
+    </div>
         <canvas id="spiders" class="hidden-xs"></canvas>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
@@ -153,13 +156,13 @@ $this->inc('elements/header.php'); ?>
                     ctx.clearRect( 0, 0, width, height );
                     for ( var i in points ) {
                         // detect points in range
-                        if ( Math.abs( getDistance( target, points[ i ] ) ) < 10000 ) {
+                        if ( Math.abs( getDistance( target, points[ i ] ) ) < 5000 ) {
                             points[ i ].active = 0.3;
                             points[ i ].circle.active = 0.6;
-                        } else if ( Math.abs( getDistance( target, points[ i ] ) ) < 40000 ) {
+                        } else if ( Math.abs( getDistance( target, points[ i ] ) ) < 20000 ) {
                             points[ i ].active = 0.1;
                             points[ i ].circle.active = 0.3;
-                        } else if ( Math.abs( getDistance( target, points[ i ] ) ) < 200000 ) {
+                        } else if ( Math.abs( getDistance( target, points[ i ] ) ) < 80000 ) {
                             points[ i ].active = 0.02;
                             points[ i ].circle.active = 0.1;
                         } else {
