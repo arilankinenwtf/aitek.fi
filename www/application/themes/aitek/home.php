@@ -11,6 +11,15 @@ $this->inc('elements/header.php'); ?>
 </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
 
+    <div class="top-content">
+    <?php
+    $a = new Area('Top');
+    $a->enableGridContainer();
+    // tai $a->setAreaGridMaximumColumns(12);
+    $a->display($c);
+    ?>
+    </div>
+
     <?php
     $a = new Area('Main');
     $a->enableGridContainer();
