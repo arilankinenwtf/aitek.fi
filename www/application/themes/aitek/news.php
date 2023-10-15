@@ -79,7 +79,7 @@ $this->inc('elements/header.php'); ?>
     <div class="news-content">
 
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-6">
           <div class="news-info mb-4">
             <span class="news-date"><?php 
               echo $date; 
@@ -114,7 +114,7 @@ $this->inc('elements/header.php'); ?>
           $a->display($c);
           ?>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           <div class="news-image-wrapper mb-4 position-relative">
             <?php if($mainImage): ?>
               <img src="<?php echo $mainImage; ?>" height="450" width="500" class="lazyload news-image" alt="<?php echo $title; ?>">
